@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Plugin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="nome completo" id="name">
+        <input type="text" placeholder="e-mail" id="mail">
+        <input type="tel" placeholder="telefone" id="tel">
+        <input type="text" placeholder="CPF" id="cpf">
+        <input type="text" placeholder="endereço completo" id="adress">
+        <input type="text" placeholder="CEP" id="cep">
+        <button type="submit">Enviar</button>
+    </form>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./plugin/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tel').mask("(00) 00000-0000")
+            $('#cpf').mask('000.000.000-00', {reverse: true});
+            $('#cep').mask('00000-000');
+            
+        })
+    </script>
+</body>
+</html>
