@@ -13,7 +13,7 @@
     grid-column-gap: 1%;
 }
 
-.product-card-card {} /* bloco */
+.product-card {} /* bloco */
 
 .product-card__img { /* elemento */
     width: 100%;
